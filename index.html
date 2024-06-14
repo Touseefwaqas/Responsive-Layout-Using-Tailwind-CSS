@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en" class="w-full h-full font-raleway">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Data Storage</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  
+</head> 
+<body class="w-full h-full">
+
+  <div class="bg-dark-blue-bg flex justify-center items-center w-full h-full relative">
+    
+      <img class="w-full h-1/2 absolute bottom-0 object-cover bg-image" src="assets/images/bg-desktop.png" alt="background-image">
+
+    <div class="z-10 flex gap-10 lg:flex-row flex-col">
+      <section class="bg-light-blue-bg p-8 rounded-2xl rounded-tr-4xl w-80">
+          <img class="mb-8" src="assets/images/logo.svg" alt="logo-icon">
+
+        <div class="border-solid border-3 border-red flex gap-4">
+          <div class="bg-dark-blue-bg p-3 rounded-xl flex items-center">
+            <img src="assets/images/icon-document.svg" alt="document-icon">
+          </div>
+          <div class="bg-dark-blue-bg p-3 rounded-xl flex items-center">
+            <img src="assets/images/icon-folder.svg" alt="folder-icon">
+          </div>
+          <div class="bg-dark-blue-bg p-3 rounded-xl flex items-center">
+            <img src="assets/images/icon-upload.svg" alt="upload-icon ">
+          </div>
+        </div>
+
+      </section>
+
+      <section class="bg-light-blue-bg p-8 rounded-2xl self-center md:w-auto w-80">
+        <p class="mb-4 text-gray-400 text-sm">You've used 
+          <span class="font-semibold text-white">815</span>
+          of your storage</p>
+
+        <!-- Loading bar -->
+        <div class="bg-loading-dark h-6 md:w-100 rounded-full p-1 w-full">
+          <div class="w-3/4  h-full rounded-full flex items-center bg-gradient-to-r from-loading-bar-color-pink to-loading-bar-color-dark-pink justify-end pr-1">
+            <div class="bg-white h-3 w-3 rounded-full"></div>
+          </div>
+        </div>
+
+        <!-- Storage Used -->
+        <div class="flex items-center justify-between mt-2">
+          <p class="text-white text-xs font-semibold">0 GB</p>
+          <p class="text-white text-xs font-semibold">1000 GB</p>
+        </div>
+
+      </section>
+    </div>
+
+
+  </div>
+  
+</body>
+</html>
